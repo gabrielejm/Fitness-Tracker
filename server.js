@@ -1,17 +1,22 @@
 const express = require("express");
-const mongojs = require("mongojs");
+const logger = require("morgan");
+const mongoose = require("mongoose");
 
-const app = express();
 const PORT = process.env.PORT || 3000;
 
-const db = mongojs(databaseUrl, collections);
+const db = require("./models");
 
-// Sets up the Express app to handle data parsing
+const app = express();
+
+app.use(logger("dev"));
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Starts the server to begin listening
-// =============================================================
-app.listen(PORT, function () {
-  console.log("App listening on PORT " + PORT);
+app.use(express.static("public"));
+
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/FitnessTracker", { useNewUrlParser: true });
+
+app.listen(PORT, () => {
+  console.log(`App running on port ${PORT}!`);
 });
