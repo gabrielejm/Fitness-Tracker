@@ -35,14 +35,14 @@ const ExerciseSchema = new Schema({
   },
 });
 
-db.workout.aggregate([
-  {
-    $addFields: {
-      totalWeight: { $sum: "" },
-      totalDuration: { $sum: "" },
-    },
-  },
-]);
+// db.workouts.aggregate([
+//   {
+//     $addFields: {
+//       totalWeight: { $sum: "" },
+//       totalDuration: { $sum: "" },
+//     },
+//   },
+// ]);
 
 const Exercise = mongoose.model("Exercise", ExerciseSchema);
 
