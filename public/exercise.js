@@ -12,7 +12,7 @@ const distanceInput = document.querySelector("#distance");
 const completeButton = document.querySelector("button.complete");
 const addButton = document.querySelector("button.add-another");
 const toast = document.querySelector("#toast");
-const newWorkout = document.querySelector(".new-workout")
+const newWorkout = document.querySelector(".new-workout");
 
 let workoutType = null;
 let shouldNavigateAway = false;
@@ -21,13 +21,12 @@ async function initExercise() {
   let workout;
 
   if (location.search.split("=")[1] === undefined) {
-    workout = await API.createWorkout()
-    console.log(workout)
+    workout = await API.createWorkout();
+    console.log(workout);
   }
   if (workout) {
     location.search = "?id=" + workout._id;
   }
-
 }
 
 initExercise();
@@ -96,6 +95,7 @@ function validateInputs() {
 }
 
 async function handleFormSubmit(event) {
+  console.log("button clicked");
   event.preventDefault();
 
   let workoutData = {};
@@ -113,6 +113,8 @@ async function handleFormSubmit(event) {
     workoutData.reps = Number(repsInput.value.trim());
     workoutData.duration = Number(resistanceDurationInput.value.trim());
   }
+
+  console.log(workoutData);
 
   await API.addExercise(workoutData);
   clearInputs();
@@ -151,6 +153,4 @@ if (addButton) {
 }
 toast.addEventListener("animationend", handleToastAnimationEnd);
 
-document
-  .querySelectorAll("input")
-  .forEach(element => element.addEventListener("input", validateInputs));
+document.querySelectorAll("input").forEach((element) => element.addEventListener("input", validateInputs));
