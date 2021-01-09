@@ -14,8 +14,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(logger("dev"));
 
-app.use(require("./routes/html-routes"));
 app.use(require("./routes/api-routes"));
+app.use(require("./routes/html-routes"));
 
 // require("./routes/api-routes")(app);
 // require("./routes/html-routes")(app);

@@ -1,20 +1,17 @@
 const router = require("express").Router();
 
-// var path = require("path");
+const path = require("path");
 
-// module.exports = function(app) {
-//   app.get("/images/:id", function(req, res) {
-//     res.sendFile(path.join(__dirname, "../public/detail.html"));
-//   });
+router.get("/exercise", function (req, res) {
+  res.sendFile(path.join(__dirname, "../public/exercise.html"));
+});
 
-//   app.get("/favorites", function(req, res) {
-//     res.sendFile(path.join(__dirname, "../public/favorites.html"));
-//   });
+router.get("/stats", function (req, res) {
+  res.sendFile(path.join(__dirname, "../public/stats.html"));
+});
 
-//   app.get("*", function(req, res) {
-//     res.sendFile(path.join(__dirname, "../public/index.html"));
-//   });
-
-// };
+router.get("*", function (req, res) {
+  res.sendFile(path.join(__dirname, "../public/index.html"));
+});
 
 module.exports = router;

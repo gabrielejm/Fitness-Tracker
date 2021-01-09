@@ -38,8 +38,8 @@ const ExerciseSchema = new Schema({
 // db.workouts.aggregate([
 //   {
 //     $addFields: {
-//       totalWeight: { $sum: "" },
-//       totalDuration: { $sum: "" },
+//       totalWeight: { $sum: ["", "", ""] },
+//       totalDuration: { $sum: ["", "", ""] },
 //     },
 //   },
 // ]);
