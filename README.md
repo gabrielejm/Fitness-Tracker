@@ -6,14 +6,13 @@
 2. [Installation](#installation)
 3. [Usage](#usage)
 4. [Contributing](#contributing)
-5. [Tests](#tests)
-6. [License](#license)
-7. [Questions](#questions)
+5. [License](#license)
+6. [Questions](#questions)
 
 
 ### Description<a name="description"></a>
 
-Plan the perfect workout!
+Track all of your workouts!
 
 ### Installation<a name="installation"></a>
 
@@ -21,14 +20,23 @@ npm install in /Develop
 
 ### Usage<a name="usage"></a>
 
-Just answer the prompted questions and the application will create your README using your inputs.
+Click the "New Workout" button to start tracking your workout progress, or click the "Continue Workout" to continue tracking your current workout.
+
+![FitnessTrackersnip1](https://user-images.githubusercontent.com/63600183/104126286-c7748980-5329-11eb-9940-dea11b8d37f6.PNG)
+
+
+Choose the type of exercise (resistance or cardio), fill in the details, and click "Add to Workout" to add that exercise to your current workout. Click "Complete" when you are finished logging your exercises!
+
+![FitnessTrackersnip2](https://user-images.githubusercontent.com/63600183/104126290-cb081080-5329-11eb-86f8-3d576e753bfd.PNG)
+
+ On the dashboard page, you'll be shown a colorful, visual representation of your stats.
+ 
+ ![FitnessTrackersnip3](https://user-images.githubusercontent.com/63600183/104126292-ccd1d400-5329-11eb-9f62-445235e0cd8f.PNG)
+
 
 ### Contributing<a name="contributing"></a>
 
 Justin Gabriele
-
-### Tests<a name="tests"></a>
-
 
 
 ### License<a name="license"></a>
