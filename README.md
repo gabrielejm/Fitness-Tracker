@@ -25,7 +25,7 @@ Click the "New Workout" button to start tracking your workout progress, or click
 ![FitnessTrackersnip1](https://user-images.githubusercontent.com/63600183/104126286-c7748980-5329-11eb-9940-dea11b8d37f6.PNG)
 
 
-Choose the type of exercise (resistance or cardio), fill in the details, and click "Add to Workout" to add that exercise to your current workout. Click "Complete" when you are finished logging your exercises!
+Choose the type of exercise (resistance or cardio), fill in the details, and click "Add Exercise" to add that exercise to your current workout. Click "Complete" when you are finished logging your exercises!
 
 ![FitnessTrackersnip2](https://user-images.githubusercontent.com/63600183/104126290-cb081080-5329-11eb-86f8-3d576e753bfd.PNG)
 
